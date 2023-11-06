@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function display()
+{
+	/* document.getElementById("heading2").innerHTML="Thank you for clicking"; */
+	
+	/* var a=document.getElementsByClassName("heading2"); */
+	var a=document.getElementsByTagName("h2");
+	
+	for(var i=0;i<a.length;i++){
+		a[i].innerHTML="This is the message";
+	}
+}
+function show()
+{
+	
+	var s=document.getElementById("p1").innerHTML;
+	document.getElementById("head2").innerHTML=s;
+	}
+</script>
+</head>
+<body>
+<button onclick="display()">Click display</button>
+<button onclick="show()">Click show</button>
+<!-- <h2 id="heading2" style="background-color: yellow; color: maroon;"></h2> -->
+
+<p id="p1">Hello how are you?</p>
+
+<h2 class="heading2" style="background-color: yellow; color: maroon;"></h2>
+<h2 id="head2" style="background-color: pink; color: blue;"></h2>
+<h2 class="heading2" style="background-color: black; color: lime;"></h2>
+</body>
+</html>

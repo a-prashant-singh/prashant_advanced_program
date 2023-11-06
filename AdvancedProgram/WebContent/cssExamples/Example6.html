@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Position</title>
+
+<style type="text/css">
+
+#box1
+{
+border-style: solid;
+border-color: black;
+background-color: red;
+height: 1000px;
+width: 50%;
+position:relative;
+}
+
+#child1
+{
+
+border-style: solid;
+border-color: black;
+background-color: pink;
+height: 150px;
+width: 200px;
+left: 50px;
+
+position: absolute;
+}
+
+#child2
+{
+
+border-style: solid;
+border-color: black;
+background-color: green;
+height: 150px;
+width: 200px;
+left: 600px;
+position: relative;
+}
+
+#child3
+{
+
+border-style: solid;
+border-color: black;
+background-color: yellow;
+height: 150px;
+width: 200px;
+position: fixed;
+}
+
+</style>
+</head>
+<body>
+
+<div id="box1">
+<p id="child1">
+child1
+</p>
+<p id="child2">
+child2
+</p>
+<p id="child3">
+child3
+</p>
+
+</div>
+</body>
+</html>

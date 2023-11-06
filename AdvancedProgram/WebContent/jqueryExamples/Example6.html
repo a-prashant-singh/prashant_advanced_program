@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#box{
+
+background: yellow;
+height: 150px;
+width: 150px;
+position: inherit;
+}
+</style>
+<script type="text/javascript" src="myJquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	
+	
+	$("#box").mouseenter(function(){
+		$(this).animate({
+		"height": "300px",
+		"width": "400px",
+		"border-radius":"50%",
+		});
+	});
+	$("#box").mouseleave(function(){
+		$(this).animate({
+			"height": "150px",
+			"width": "150px",
+			"border-radius":"50%",
+		});
+	});
+});
+</script>
+</head>
+<body>
+
+<div id="box"></div>
+</body>
+</html>

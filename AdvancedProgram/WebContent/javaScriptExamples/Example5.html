@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+/*
+ * onlick: will execute functio0n if that element is clicked
+   onchange: Will change function if the element value is changed
+ */
+
+function display(){
+	
+	var s=document.getElementById("in1").value; /*fetching the value of input*/
+	document.getElementById("heading").innerHTML="Welcome to our website dear "+s;
+	/* Setting new message in heading*/
+}
+
+
+
+</script>
+</head>
+<body>
+<input id="in1" placeholder="Enter name" onchange="display()">
+<h2 id="heading" style="background-color: yellow; color: maroon"></h2>
+</body>
+</html>

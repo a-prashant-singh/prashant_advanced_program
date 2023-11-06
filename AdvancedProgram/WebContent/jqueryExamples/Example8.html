@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#parent{
+background: yellow;
+height: 600px;
+width: 600px;
+position: relative;
+}
+
+#child1{
+background: blue;
+height: 150px;
+width: 150px;
+}
+#child2{
+background: green;
+height: 150px;
+width: 150px;
+}
+#child3{
+background: red;
+height: 150px;
+width: 150px;
+}
+</style>
+<script type="text/javascript" src="myJquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	$("#btn1").click(function(){
+		$("#parent").empty();
+	});
+	
+	$("#btn2").click(function(){
+		$("#parent").remove();
+	});
+	$("#btn3").click(function(){
+		$("#parent").css({
+			"background-color":"silver",
+			"left":"200px"
+			});
+	});
+});
+</script>
+
+</head>
+<body>
+<button id="btn1">Empty</button>
+<button id="btn2">Remove</button>
+<button id="btn3">Hide</button>
+<div id="parent">
+<p id="child1">This is child1</p>
+<p id="child2">This is child2</p>
+<p id="child3">This is child3</p>
+</div>
+
+</body>
+
+</html>

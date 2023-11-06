@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+
+#box{
+background-color: yellow;
+height: 200px;
+width: 200px;
+}
+</style>
+<!-- In below given example we have created a function with parameter. since javascript is loosly typed 
+we do not have to define datatype.
+So when we call this function we can pass any type of cvalue in its paranthesis.
+
+In case we want to pass the element itself we use this keyword -->
+
+<script type="text/javascript">
+function dispaly(e){
+	
+	document.getElementById("box").innerHTML=e;
+}
+function show(a)
+{
+	a.innerHTML="BYE!!!";/*Since a will have the object we are setting message in that object by using innerHTML*/
+	}
+
+</script>
+
+</head>
+<body>
+
+<div id="box" onmouseover="dispaly('jhg')" onmouseleave="show(this)"></div>
+
+</body>
+</html>

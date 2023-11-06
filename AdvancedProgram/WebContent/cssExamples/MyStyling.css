@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+
+#box1{
+	background: lightblue;
+	
+	font-family: serif;
+	font-weight: bolder;
+	
+	letter-spacing: 2px;
+	word-spacing: 10px;
+}
+
+#box2{
+	/* background: rgb(300,35,367);
+	color: purple;
+	background-color: #fdd456; */
+	background-image: linear-gradient(white,pink,darkorange);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: blue;
+    border-width: thin;
+    }
+    
+a{
+    color: orange;
+    text-decoration: none;
+    
+  }
+  a:visited {
+	
+	color:blue;
+}
+
+a:hover {
+	color: black;
+}
+  
+  li{
+  
+ list-style-image:url("tick1.jpg");
+ float: left;
+  
+  }
+    
+    
+    
+    
+    

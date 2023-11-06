@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function show()
+{
+	var s1=document.getElementById("in1").value;
+	var s2=document.getElementById("in2").value;
+	if(s1!="" && s2!="" ){
+	alert("check your given first name: "+s1+"\ncheck your given last name: "+s2);
+	
+	}
+	else if(s2!="")
+		alert("You have not given first name");
+	else if(s1!="")
+		alert("You have not given last name");
+		else
+			alert("You have not given first and last name");
+	}
+
+</script>
+</head>
+<body>
+<p>Welcome to our website!</p>
+Enter First Name:<input id="in1" type="text" placeholder="enter first name">
+<br>
+Enter Last Name:<input  id="in2" type="text" placeholder="enter last name">
+<br><button  onclick="show()">submit</button>
+<br><br><button  onclick="alert('Your details submited successfully!!')">click</button>
+
+</body>
+</html>

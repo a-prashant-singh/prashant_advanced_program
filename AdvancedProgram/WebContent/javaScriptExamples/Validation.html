@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function validate(element){
+	
+	if(element.value=="" && element.name=="sname")
+		{
+		element.nextSibling.innerHTML="Please enter student name";
+		return false;
+		}
+	else if(element.value=="" && element.name=="scontact")
+	{
+			element.nextSibling.innerHTML="Please enter student contact";
+			return false;
+	}
+	else if(element.value=="" && element.name=="saddress")
+	{
+			element.nextSibling.innerHTML="Please enter student address";
+			return false;
+	}
+	
+	else
+		{
+		element.nextSibling.innerHTML="*";
+		}
+}
+
+function validateAll(){
+	var arr=document.getElementByClassName("details");
+	var flag=true;
+	
+	for(var i=0;i<arr.length;i++)
+		{
+		var element=arr[i];
+		flag=validate(element);
+		if(flag==false)
+			{
+			break;
+			}
+		}
+	return flag;
+}
+
+</script>
+</head>
+<body>
+<form action="">
+<table>
+<tr><th>Name: </th><td><input class="details" onblur="validate(this)" name="sname" type="text"><span style="color: red">*</span>
+</td></tr>
+
+<tr><th>Contact: </th><td><input class="details" onblur="validate(this)" name="scontact" type="number"><span style="color: red">*</span>
+</td></tr>
+
+<tr><th>Address: </th><td><input class="details" onblur="validate(this)" name="saddress" type="text"><span style="color: red">*</span>
+</td></tr>
+
+<tr><td colspan="2"><input type="submit" onclick="return validateAll()" value="submit"></td>
+</tr>
+</table>
+
+
+
+
+</form>
+</body>
+</html>

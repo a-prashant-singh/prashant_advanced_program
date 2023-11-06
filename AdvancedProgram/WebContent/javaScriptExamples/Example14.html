@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function getSquare()
+{
+	var s=prompt('Enter your any number');
+	
+	if(s==null)
+		document.getElementById("para").innerHTML="You have clicked cancel ";
+	else if(s=="")
+		document.getElementById("para").innerHTML="You have clicked ok without giving value";
+	else
+	{
+		var i=parseInt(s);
+		
+	if(isNaN(i)==true)
+		document.getElementById("para").innerHTML="Please give numbers only";
+	
+	else{
+		var sq=i*i;
+		document.getElementById("para").innerHTML="Square of "+i+" is "+sq;
+	}
+	
+	}
+}
+
+</script>
+</head>
+<body>
+
+<!-- <button  onclick="para.innerHTML=prompt('Enter your name')">click me</button> --> 
+
+<button onclick="getSquare()">click me</button>
+
+<h1><p id="para" style="background-color: yellow; color: red"></p></h1>
+</body>
+</html>

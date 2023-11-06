@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function logout() {
+	
+	var flag=confirm("Do you want to exit");
+	if(flag)
+		document.getElementById("heading").innerHTML="Thank you!!! Visit us again";
+	else
+		document.getElementById("heading").innerHTML="Thank you for staying with us again";
+	
+}
+
+</script>
+</head>
+<body>
+<h1 id="heading">Welcome to our shopping website</h1>
+<p id="para"></p>
+<button onclick="logout()">Logout</button>
+</body>
+</html>

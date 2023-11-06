@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#box{
+
+background: yellow;
+height: 150px;
+width: 150px;
+}
+</style>
+<script type="text/javascript" src="myJquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	$("#btn1").click(function(){
+		
+		$("#d1").append("THIS IS APPENDED");
+		
+	});
+	$("#btn2").click(function(){
+		
+		$("#d2").prepend("THIS IS PREPENDED");
+		
+	});
+	$("#btn3").click(function(){
+	
+	$("#d1").before("THIS IS BEFORE");
+	
+	});
+	$("#btn4").click(function(){
+	
+	$("#d2").after("THIS IS AFTER");
+	
+});
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Append</button>
+<button id="btn2">Prepend</button>
+<button id="btn3">Before</button>
+<button id="btn4">After</button>
+<div id="d1" style="background-color: black;">wqdwqeded</div>
+<div id="d2" style="background-color: blue;;">ewdede</div>
+</body>
+</html>

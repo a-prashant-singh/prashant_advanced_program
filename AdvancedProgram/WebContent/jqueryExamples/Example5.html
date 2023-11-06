@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#box{
+
+background: yellow;
+height: 150px;
+width: 150px;
+}
+</style>
+<script type="text/javascript" src="myJquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	$("#para").dblclick(function(){
+		alert("You have double clicked");
+	});
+	
+	$(".in1").change(function(){
+		var s=this.value;
+		alert("You have change the value to:"+s);
+	});
+	
+	$("#box").mouseenter(function(){
+		$(this).html("<br> You are DON</br>");
+	});
+	$("#box").mouseleave(function(){
+		$(this).text("<br> You are GONE</br>");
+	});
+});
+</script>
+</head>
+<body>
+<p id="para" style="background: silver; color: green " >This is paragraph by prashant singh . I think you know that person</p>
+<input type="text" class="in1" value="Hi Everyone"> 
+<div id="box"></div>
+</body>
+</html>
